@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    color: #faf8d7;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.box-background{
+    position: relative;
+}
+
+
+.back-basketball {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    scale: 1.3;
+}
+
+.box-background {
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    background: linear-gradient(180deg, rgba(68, 237, 198, 1) 0%, rgba(51, 105, 181, 1) 50%, rgba(66, 220, 196, 1) 100%);
+}
+
+.content {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-basketball {
+    z-index: -1;
+}
+
+.icon-container img {
+    width: 7rem;
+}
+
+.title-container {
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 5px 5px #558ABB;
+}
+
+.title-container span:nth-child(3) {
+    font-style: normal;
+}
+
+.title-container span {
+    font-size: 3.5rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.title-container span:nth-child(3){
+    margin: 0;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    font-weight: bold;
+
+}
+
+.description span {
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+.prize-box {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: white;
+    margin: 1rem 0;
+    animation: textChange 1.5s infinite;
+}
+
+.detail-container {
+    display: flex;
+    width: 100%;
+    margin: 1rem 0 2rem 0;
+}
+
+.detail-container div {
+    display: flex;
+    width: 50%;
+}
+
+.detail-container span {
+    color: white;
+    text-shadow: 0 0 1rem white;
+}
+
+.date-box {
+    flex: 4;
+}
+
+.location-box {
+    flex: 6;
+}
+
+.date-icon {
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.date-icon svg {
+    width: 1.5rem;
+}
+
+.date-detail {
+    flex: 3;
+    flex-direction: column;
+    line-height: 2rem;
+}
+
+.location-icon {
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.location-icon svg {
+    width: 1.5rem;
+}
+
+.location-detail {
+    flex: 4;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+}
+
+.footer div {
+    display: flex;
+}
+
+.footer svg{
+    width: 2rem;
+    height: 2rem;
+}
+
+.left-footer {
+    flex: 2;
+    justify-content: flex-start;
+    padding: 0 1rem;
+}
+
+.right-footer {
+    flex: 2;
+    justify-content: flex-end;
+    padding: 0 1rem;
+}
+
+.content-footer {
+    flex: 4;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.match{
+    display: flex;
+    flex-direction: column;
+}
+
+.match span{
+    line-height: 1.5rem;
+}
+
+.match span:nth-child(1){
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.match span:nth-child(4){
+    margin-top: 0.2rem;
+    align-self: center;
+}
+
+#qrcode{
+    width: 50%;
+    padding: 1rem 0;
+}
+
+#join{
+    padding: 0.2rem 0.5rem;
+    background-color: #220074;
+    border-radius: 1rem;
+}
+
+@keyframes textChange {
+    0%{
+        text-shadow: 0 0 1rem white;
+    }
+
+    50%{
+        text-shadow: none;
+    }
+
+    100%{
+        text-shadow: 0 0 1rem white;
+    }
+
+}

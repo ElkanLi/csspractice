@@ -21,7 +21,7 @@
 
 .box-background {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     z-index: -10;
     background: linear-gradient(180deg, rgba(68, 237, 198, 1) 0%, rgba(51, 105, 181, 1) 50%, rgba(66, 220, 196, 1) 100%);
 }
